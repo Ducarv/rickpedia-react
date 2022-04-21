@@ -5,13 +5,24 @@ import './styles.css'
 
 export const Cards = (props) => {
     const data = props.data;
+    let { page, setPage } = props;
 
     return(
         <div className='card--content'>
-            <div className='pages--button'>
-                <button>BACK</button>
-                <button>NEXT</button>
-            </div>
+            <form>
+                <button 
+                    value={page}
+                    onClick={() => setPage(page--)}
+                >
+                    Back
+                </button>
+                <button
+                    value={page}
+                    onClick={() => setPage(page++)}
+                >
+                    Next
+                </button>
+            </form>
             <div className='character--content'>
             {data.map(character => (
                     <div key={character.id} className='character--card'>

@@ -1,18 +1,15 @@
 .card--content {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.pages--button {
+form {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    height: 3rem;
-    margin: 4rem 0rem 2rem 0rem;
 }
 
 .character--content {
@@ -28,6 +25,7 @@
     border: solid 5px #01ff98;
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: #010c0f;
     transition: all 0.2s ease-in-out;
 }
 

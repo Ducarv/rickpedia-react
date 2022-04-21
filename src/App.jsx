@@ -24,8 +24,8 @@ export const App = () => {
   }
 
   return (
-    <div>
-      <Cards data={data} page={page}/>
+    <div className='App'>
+      <Cards data={data} page={page} setPage={setPage}/>
     </div>
   )
 }
